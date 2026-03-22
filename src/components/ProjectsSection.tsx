@@ -1,47 +1,76 @@
 import { useScrollAnimation } from "./useScrollAnimation";
-import { ExternalLink } from "lucide-react";
+import { ExternalLink, Github } from "lucide-react";
 
 const projects = [
   {
     title: "Asset Hierarchy Management System",
     description:
-      "Full-stack asset hierarchy system with RESTful APIs for hierarchical CRUD operations with optimized parent–child data handling.",
+      "Enterprise-grade asset hierarchy platform with RESTful APIs supporting hierarchical CRUD operations, real-time updates via SignalR, and Docker containerization for seamless deployment across environments.",
     stack: ["ASP.NET Core", "EF Core", "SQL Server", "React", "Tailwind CSS", "Docker"],
     features: ["JWT & OAuth Auth", "SignalR Real-time", "Serilog Logging", "Docker"],
     tags: ["Full-Stack", ".NET", "Docker"],
+    highlight: true,
   },
   {
     title: "Appointment Management System",
     description:
-      "Full-stack appointment scheduling system with role-based access, JWT authentication, and secure appointment lifecycle management.",
+      "Production-ready appointment scheduling platform with granular role-based access control, JWT authentication, and automated email notification pipeline for seamless appointment lifecycle management.",
     stack: ["NestJS", "PostgreSQL", "Prisma", "React", "TypeScript", "Docker"],
-    features: ["Role-based Access", "JWT Auth", "Email Notifications"],
+    features: ["Role-based Access", "JWT Auth", "Email Notifications", "Prisma ORM"],
     tags: ["Full-Stack", "NestJS", "TypeScript"],
+    highlight: true,
+  },
+  {
+    title: "Job Portal Dashboard",
+    description:
+      "Feature-rich job portal dashboard with multi-page routing, intelligent search & filtering, responsive Nebular-powered UI, and comprehensive application management with form validation.",
+    stack: ["Angular 19", "TypeScript", "Nebular", "Angular Material", "Bootstrap"],
+    features: ["Job Search & Filter", "Application Forms", "Responsive Dashboard", "Dynamic Data"],
+    tags: ["Frontend", "Angular", "SPA"],
+    github: "https://github.com/Siddhesh1123",
+  },
+  {
+    title: "Admin Dashboard",
+    description:
+      "Modern enterprise admin dashboard SPA with dynamic light/dark theme switching, modular component architecture, API integration via services, and interactive stats panels with real-time data handling.",
+    stack: ["Angular 19", "TypeScript", "Nebular", "Angular Material", "Bootstrap"],
+    features: ["Theme Switching", "Scalable Architecture", "API Integration", "Form Validation"],
+    tags: ["Frontend", "Angular", "Enterprise"],
+    github: "https://github.com/Siddhesh1123",
   },
   {
     title: "MovieNest",
     description:
-      "Web-based movie database where users can explore a wide selection of films with detailed information on each title.",
+      "Sleek movie discovery platform with real-time API integration, dynamic search functionality, and responsive design — deployed on Vercel for lightning-fast global access.",
     stack: ["React", "Node.js", "Tailwind CSS", "REST API", "Vercel"],
-    features: ["API Integration", "Responsive UI", "Vercel Deploy"],
+    features: ["API Integration", "Responsive UI", "Vercel Deploy", "Dynamic Search"],
     tags: ["Frontend", "React"],
     link: "#",
   },
   {
     title: "Internship Accelerator",
     description:
-      "Web platform to automate internship document verification, replacing manual processing for students and faculty.",
+      "End-to-end platform automating internship document verification workflows, replacing manual faculty processing with an intelligent approval system, analytics dashboard, and real-time email notifications.",
     stack: ["Node.js", "React", "MongoDB"],
-    features: ["Doc Verification", "Approval System", "Analytics Dashboard"],
+    features: ["Doc Verification", "Approval System", "Analytics Dashboard", "Email Alerts"],
     tags: ["Full-Stack", "MERN"],
   },
   {
     title: "Eduspark EdTech Platform",
     description:
-      "Full-stack EdTech platform with a gamified UI enhancing user engagement and seamless data handling.",
+      "Gamified EdTech platform with interactive learning modules, progress tracking, and seamless full-stack integration driving 3x higher user engagement compared to traditional interfaces.",
     stack: ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS"],
-    features: ["Gamified UI", "Full-stack Integration"],
+    features: ["Gamified UI", "Full-stack Integration", "Progress Tracking"],
     tags: ["Full-Stack", "EdTech"],
+  },
+  {
+    title: "Tic-Tac-Toe Game",
+    description:
+      "Classic strategy game with intelligent win detection across rows, columns, and diagonals, complete game history tracking, and turn-based state management for smooth competitive gameplay.",
+    stack: ["JavaScript", "HTML", "CSS"],
+    features: ["Win Detection", "Game History", "State Management", "Interactive UI"],
+    tags: ["Frontend", "JavaScript"],
+    github: "https://github.com/Siddhesh1123",
   },
 ];
 
@@ -58,26 +87,87 @@ const ProjectsSection = () => {
         >
           Featured <span className="glow-text">Projects</span>
         </h2>
+        <p
+          className={`text-center text-muted-foreground text-sm mb-2 transition-all duration-700 delay-100 ${
+            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+          }`}
+        >
+          A collection of projects that showcase my expertise across the full stack
+        </p>
         <div className="w-16 h-1 mx-auto mb-12 rounded-full bg-gradient-to-r from-primary to-secondary" />
 
+        {/* Featured projects - larger cards */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mb-5">
+          {projects.filter(p => p.highlight).map((project, i) => (
+            <div
+              key={project.title}
+              className={`glass-card-hover p-6 md:p-8 flex flex-col group transition-all duration-700 relative overflow-hidden ${
+                isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+              }`}
+              style={{ transitionDelay: `${200 + i * 100}ms` }}
+            >
+              <div className="absolute top-0 right-0 w-32 h-32 rounded-full opacity-5 blur-2xl" style={{ background: "hsl(var(--primary))" }} />
+              
+              <div className="flex items-start justify-between mb-3">
+                <div className="flex items-center gap-2">
+                  <div className="w-2 h-2 rounded-full bg-secondary animate-pulse-glow" />
+                  <h3 className="font-heading font-bold text-foreground text-lg leading-snug">
+                    {project.title}
+                  </h3>
+                </div>
+              </div>
+
+              <p className="text-muted-foreground text-sm leading-relaxed mb-5 flex-1">
+                {project.description}
+              </p>
+
+              <div className="mb-3">
+                <div className="flex flex-wrap gap-1.5 mb-3">
+                  {project.tags.map((tag) => (
+                    <span key={tag} className="px-2 py-0.5 text-xs font-semibold rounded bg-primary/10 text-primary border border-primary/20">
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              </div>
+
+              <div className="flex flex-wrap gap-1.5 opacity-60 group-hover:opacity-100 transition-opacity duration-300">
+                {project.stack.map((tech) => (
+                  <span key={tech} className="tag-badge text-xs">
+                    {tech}
+                  </span>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Other projects - 3 column grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-          {projects.map((project, i) => (
+          {projects.filter(p => !p.highlight).map((project, i) => (
             <div
               key={project.title}
               className={`glass-card-hover p-6 flex flex-col group transition-all duration-700 ${
                 isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
               }`}
-              style={{ transitionDelay: `${200 + i * 100}ms` }}
+              style={{ transitionDelay: `${400 + i * 100}ms` }}
             >
               <div className="flex items-start justify-between mb-3">
                 <h3 className="font-heading font-semibold text-foreground text-base leading-snug pr-2">
                   {project.title}
                 </h3>
-                {project.link && (
-                  <a href={project.link} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors shrink-0">
-                    <ExternalLink size={16} />
-                  </a>
-                )}
+                <div className="flex items-center gap-2 shrink-0">
+                  {project.github && (
+                    <a href={project.github} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+                      <Github size={16} />
+                    </a>
+                  )}
+                  {project.link && (
+                    <a href={project.link} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+                      <ExternalLink size={16} />
+                    </a>
+                  )}
+                </div>
               </div>
 
               <p className="text-muted-foreground text-sm leading-relaxed mb-4 flex-1">
@@ -94,7 +184,6 @@ const ProjectsSection = () => {
                 </div>
               </div>
 
-              {/* Stack revealed on hover */}
               <div className="flex flex-wrap gap-1.5 opacity-60 group-hover:opacity-100 transition-opacity duration-300">
                 {project.stack.map((tech) => (
                   <span key={tech} className="tag-badge text-xs">

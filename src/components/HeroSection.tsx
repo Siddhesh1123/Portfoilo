@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-import { Github, Linkedin, Mail, MapPin, ExternalLink } from "lucide-react";
+import { Github, Linkedin, Mail, MapPin, ExternalLink, ChevronDown } from "lucide-react";
 import ParticleBackground from "./ParticleBackground";
 
-const roles = ["Software Engineer", "Full-Stack Developer", "Backend Engineer", "API Architect"];
+const roles = ["Software Engineer", "Full-Stack Developer", "Backend Engineer", "API Architect", "System Designer"];
 
 const HeroSection = () => {
   const [roleIndex, setRoleIndex] = useState(0);
@@ -61,10 +61,18 @@ const HeroSection = () => {
         </div>
 
         <p
-          className="text-muted-foreground text-base md:text-lg mb-10 animate-fade-up"
+          className="text-muted-foreground text-base md:text-lg mb-4 animate-fade-up"
           style={{ animationDelay: "0.5s" }}
         >
           Building scalable systems, one API at a time
+        </p>
+
+        <p
+          className="text-muted-foreground/70 text-sm max-w-xl mx-auto mb-10 animate-fade-up"
+          style={{ animationDelay: "0.55s" }}
+        >
+          Full-Stack Software Engineer specializing in distributed backend systems, 
+          microservice architectures, and modern web applications
         </p>
 
         <div
@@ -107,6 +115,13 @@ const HeroSection = () => {
             </a>
           ))}
         </div>
+      </div>
+
+      {/* Scroll indicator */}
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-float">
+        <a href="#about" className="text-muted-foreground/50 hover:text-primary transition-colors">
+          <ChevronDown size={24} />
+        </a>
       </div>
     </section>
   );
