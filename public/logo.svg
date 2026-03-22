@@ -1,0 +1,14 @@
+<svg width="400" height="90" viewBox="0 0 400 90" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gD" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6C63FF"/>
+      <stop offset="100%" stop-color="#00E5FF"/>
+    </linearGradient>
+  </defs>
+  <circle cx="45" cy="45" r="38" fill="none" stroke="url(#gD)" stroke-width="2" stroke-dasharray="6 4"/>
+  <circle cx="45" cy="45" r="26" fill="none" stroke="url(#gD)" stroke-width="1.5" opacity="0.4"/>
+  <text x="45" y="45" font-family="Georgia,'Times New Roman',serif" font-size="22" font-weight="700" fill="url(#gD)" text-anchor="middle" dominant-baseline="central">SW</text>
+  <circle cx="45" cy="7" r="4" fill="#00E5FF"/>
+  <text x="100" y="36" font-family="Georgia,'Times New Roman',serif" font-size="22" font-weight="700" fill="url(#gD)">Siddhesh Wayal</text>
+  <text x="101" y="57" font-family="'Courier New',Courier,monospace" font-size="10" fill="#6C63FF" opacity="0.7" letter-spacing="2.5">FULL-STACK ENGINEER</text>
+</svg>

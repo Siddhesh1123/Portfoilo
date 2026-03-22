@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
+import Logo from "/favicon.svg";
 
 const links = [
   { label: "About", href: "#about" },
@@ -9,6 +10,8 @@ const links = [
   { label: "Certifications", href: "#certifications" },
   { label: "Contact", href: "#contact" },
 ];
+
+
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -34,16 +37,17 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled
-          ? "glass-card border-b border-glass-border"
-          : "bg-transparent"
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? "glass-card border-b border-glass-border" : "bg-transparent"
+        }`}
       style={scrolled ? { borderRadius: 0 } : {}}
     >
-      <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-        <a href="#" className="font-heading font-bold text-lg glow-text">
-          SW
+      <div className="max-w-6xl mx-auto px-6 py-3 flex items-center justify-between">
+        <a href="#" className="flex items-center" aria-label="Siddhesh Wayal">
+          <img
+            src={Logo}
+            alt="Siddhesh Wayal"
+            className="h-8 sm:h-10 md:h-12 lg:h-14 w-auto object-contain"
+          />
         </a>
 
         {/* Desktop */}
@@ -52,11 +56,10 @@ const Navbar = () => {
             <a
               key={l.href}
               href={l.href}
-              className={`text-sm font-medium transition-colors duration-300 ${
-                active === l.href.slice(1)
+              className={`text-sm font-medium transition-colors duration-300 ${active === l.href.slice(1)
                   ? "text-primary"
                   : "text-muted-foreground hover:text-foreground"
-              }`}
+                }`}
             >
               {l.label}
             </a>
@@ -74,7 +77,10 @@ const Navbar = () => {
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <div className="md:hidden glass-card border-t border-glass-border px-6 py-4 space-y-4" style={{ borderRadius: 0 }}>
+        <div
+          className="md:hidden glass-card border-t border-glass-border px-6 py-4 space-y-4"
+          style={{ borderRadius: 0 }}
+        >
           {links.map((l) => (
             <a
               key={l.href}

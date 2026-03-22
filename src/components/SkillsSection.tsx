@@ -10,30 +10,48 @@ const categories = [
   {
     title: "Frontend",
     icon: <Layout size={20} />,
-    skills: ["React", "Angular", "Tailwind CSS", "HTML5/CSS3"],
+    skills: ["React", "Next.js", "Angular", "Tailwind CSS", "HTML5/CSS3"],
   },
   {
     title: "Backend",
     icon: <Server size={20} />,
-    skills: ["ASP.NET Core", "Node.js", "Express.js", "NestJS", "FastAPI"],
+    skills: [
+      "ASP.NET Core Web API",
+      "Node.js",
+      "Express.js",
+      "NestJS",
+      "FastAPI",
+      "Flask",
+      "REST APIs",
+    ],
   },
   {
     title: "Databases",
     icon: <Database size={20} />,
-    skills: ["PostgreSQL", "MySQL", "MongoDB", "Firebase", "Redis"],
+    skills: ["PostgreSQL", "MySQL", "MongoDB", "SQLite", "Firebase", "Redis"],
   },
   {
     title: "Cloud & DevOps",
     icon: <Cloud size={20} />,
-    skills: ["AWS (EC2, S3)", "GCP", "Docker", "CI/CD"],
+    skills: ["AWS (EC2, S3)", "Google Cloud", "Docker", "CI/CD"],
+  },
+  {
+    title: "Architecture & Security",
+    icon: <Wrench size={20} />,
+    skills: [
+      "JWT Authentication",
+      "OAuth",
+      "Clean Architecture",
+      "Prisma ORM",
+      "Entity Framework Core",
+    ],
   },
   {
     title: "Tools",
     icon: <Wrench size={20} />,
-    skills: ["Git", "Jira", "Postman", "SSMS", "Agile/Scrum"],
+    skills: ["Git", "GitHub", "Jira", "Postman", "SSMS", "Agile/Scrum"],
   },
 ];
-
 const SkillsSection = () => {
   const { ref, isVisible } = useScrollAnimation();
 

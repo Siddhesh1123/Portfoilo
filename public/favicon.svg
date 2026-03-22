@@ -1,0 +1,12 @@
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gDf" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6C63FF"/>
+      <stop offset="100%" stop-color="#00E5FF"/>
+    </linearGradient>
+  </defs>
+  <circle cx="32" cy="32" r="28" fill="none" stroke="url(#gDf)" stroke-width="2" stroke-dasharray="6 4"/>
+  <circle cx="32" cy="32" r="19" fill="none" stroke="url(#gDf)" stroke-width="1.5" opacity="0.4"/>
+  <text x="32" y="32" font-family="Georgia,'Times New Roman',serif" font-size="18" font-weight="700" fill="url(#gDf)" text-anchor="middle" dominant-baseline="central">SW</text>
+  <circle cx="32" cy="4" r="3.5" fill="#00E5FF"/>
+</svg>

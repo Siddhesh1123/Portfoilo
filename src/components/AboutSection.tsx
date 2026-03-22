@@ -1,13 +1,14 @@
-import { GraduationCap, Briefcase, GitBranch, Award, BookOpen, MapPin, Calendar } from "lucide-react";
+import { GraduationCap, Briefcase, GitBranch, Award, Calendar } from "lucide-react";
 import { useScrollAnimation } from "./useScrollAnimation";
-import avatarImg from "@/assets/siddhesh-avatar.png";
 
 const stats = [
   { icon: <GraduationCap size={24} />, value: "9.1", label: "GPA" },
   { icon: <Briefcase size={24} />, value: "4+", label: "Internships" },
-  { icon: <Award size={24} />, value: "2+", label: "Years Exp" },
+  { icon: <Award size={24} />, value: "1+", label: "Years Exp" },
   { icon: <GitBranch size={24} />, value: "33", label: "GitHub Repos" },
 ];
+
+
 
 const AboutSection = () => {
   const { ref, isVisible } = useScrollAnimation();
@@ -24,59 +25,39 @@ const AboutSection = () => {
         </h2>
         <div className="w-16 h-1 mx-auto mb-16 rounded-full bg-gradient-to-r from-primary to-secondary" />
 
-        {/* Photo + Bio Layout */}
-        <div className="grid grid-cols-1 lg:grid-cols-5 gap-10 mb-16">
-          {/* Photo */}
-          <div
-            className={`lg:col-span-2 flex justify-center lg:justify-start transition-all duration-700 delay-200 ${
-              isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-8"
-            }`}
-          >
-            <div className="relative group">
-              <div className="absolute -inset-1 rounded-2xl bg-gradient-to-br from-primary via-secondary to-primary opacity-50 blur-lg group-hover:opacity-75 transition-opacity duration-500" />
-              <div className="relative w-64 h-72 md:w-72 md:h-80 rounded-2xl overflow-hidden border-2 border-glass-border">
-                <img
-                  src={avatarImg}
-                  alt="Siddhesh Wayal"
-                  className="w-full h-full object-cover object-top"
-                />
-              </div>
-              {/* Floating badge */}
-              <div className="absolute -bottom-4 -right-4 glass-card px-4 py-2 rounded-xl border border-primary/30">
-                <span className="text-xs font-mono text-secondary">💻 Open to Work</span>
-              </div>
-            </div>
-          </div>
+        {/* Bio */}
+        <div
+          className={`glass-card-hover p-6 md:p-8 mb-8 transition-all duration-700 delay-200 ${
+            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+          }`}
+        >
+          <h3 className="font-heading text-2xl md:text-3xl font-bold text-foreground mb-2">
+            Hi, I'm <span className="glow-text">Siddhesh</span> 
+          </h3>
+          <p className="text-primary font-medium text-sm mb-6 font-mono">
+            Software Engineer 1 · Full-Stack Developer · ASP.NET Core Developer
+          </p>
 
-          {/* Bio Content */}
-          <div
-            className={`lg:col-span-3 transition-all duration-700 delay-300 ${
-              isVisible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-8"
-            }`}
-          >
-            <h3 className="font-heading text-2xl md:text-3xl font-bold text-foreground mb-2">
-              Hi, I'm <span className="glow-text">Siddhesh</span> 👋
-            </h3>
-            <p className="text-primary font-medium text-sm mb-6 font-mono">
-              Software Engineer · Full-Stack Developer · System Designer
+          <div className="space-y-4 text-muted-foreground leading-relaxed text-sm md:text-base">
+            <p>
+              I'm a <span className="text-foreground font-medium">Software Engineer 1</span> and <span className="text-foreground font-medium">Full-Stack Developer</span> with deep expertise across two distinct stacks — <span className="text-foreground font-medium">ASP.NET Core on the .NET side</span> and the <span className="text-foreground font-medium">MERN stack</span> on the JavaScript side. I specialize in high-performance, production-grade applications that scale elegantly under real-world demands.
             </p>
-
-            <div className="space-y-4 text-muted-foreground leading-relaxed text-sm md:text-base">
-              <p>
-                I'm a Software Engineer who thrives at the intersection of <span className="text-foreground font-medium">backend engineering</span>, <span className="text-foreground font-medium">distributed systems</span>, and <span className="text-foreground font-medium">modern web development</span>. With a strong foundation in system design and API architecture, I specialize in building high-performance, production-grade applications that scale elegantly under real-world demands.
-              </p>
-              <p>
-                My journey spans from crafting <span className="text-secondary font-medium">RESTful APIs handling thousands of concurrent requests</span> to designing <span className="text-secondary font-medium">microservice architectures</span> with robust authentication, real-time communication, and containerized deployments. I've delivered end-to-end solutions across healthcare, education, and enterprise asset management domains.
-              </p>
-              <p>
-                Currently at <span className="text-primary font-medium">WonderBiz Technologies</span>, I architect and develop distributed backend services using C#, ASP.NET Core, and EF Core — optimizing for performance, reliability, and maintainability across high-throughput production environments.
-              </p>
-              <p>
-                I enjoy solving complex engineering challenges — whether that's optimizing database queries, designing event-driven architectures, building CI/CD pipelines, or creating pixel-perfect frontend experiences. I believe great software is built at the intersection of <span className="text-foreground font-medium">clean code</span>, <span className="text-foreground font-medium">thoughtful design</span>, and <span className="text-foreground font-medium">relentless iteration</span>.
-              </p>
-            </div>
+            <p>
+              On the <span className="text-secondary font-medium">.NET stack</span>, I architect distributed backend services using <span className="text-secondary font-medium">C#, ASP.NET Core Web API, and EF Core</span> — designing RESTful APIs, microservice architectures, event-driven pipelines with <span className="text-secondary font-medium">RabbitMQ</span>, and real-time telemetry systems backed by <span className="text-secondary font-medium">InfluxDB</span>. I handle end-to-end auth with <span className="text-secondary font-medium">JWT & OAuth</span> and containerize deployments using <span className="text-secondary font-medium">Docker</span>.
+            </p>
+            <p>
+              On the <span className="text-primary font-medium">MERN stack</span>, I build full-stack JavaScript applications with <span className="text-primary font-medium">MongoDB, Express.js, React, and Node.js</span> — delivering everything from dynamic SPAs and admin dashboards to automated workflow systems and RESTful backend services.
+            </p>
+            <p>
+              On the frontend, I craft modern, responsive UIs with <span className="text-foreground font-medium">React, Angular, TypeScript, Tailwind CSS, and SCSS</span> — building clean component architectures and pixel-perfect experiences that complement the backend systems I engineer.
+            </p>
+            <p>
+              Currently at <span className="text-primary font-medium">WonderBiz Technologies</span>, delivering full-stack solutions across industrial IoT, asset management, and enterprise domains — optimizing every layer for performance, reliability, and long-term maintainability.
+            </p>
           </div>
         </div>
+
+
 
         {/* Education Card */}
         <div
@@ -101,9 +82,7 @@ const AboutSection = () => {
               </p>
               <div className="flex flex-wrap gap-1.5">
                 {["Data Structures & Algorithms", "System Design", "OOPs", "DBMS", "Software Engineering", "Computer Architecture", "Project Management"].map((course) => (
-                  <span key={course} className="tag-badge text-xs">
-                    {course}
-                  </span>
+                  <span key={course} className="tag-badge text-xs">{course}</span>
                 ))}
               </div>
             </div>
