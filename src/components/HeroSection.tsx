@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Github, Linkedin, Mail, MapPin, ExternalLink, ChevronDown } from "lucide-react";
 import ParticleBackground from "./ParticleBackground";
-import avatarImg from "@/assets/siddhesh-avatar.png";
+import avatarImg from "@/assets/Me.jpg";
 
 const roles = [
   "Software Engineer 1",
