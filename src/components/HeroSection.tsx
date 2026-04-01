@@ -111,7 +111,7 @@ const HeroSection = () => {
             >
               {[
                 { icon: <Github size={18} />, href: "https://github.com/Siddhesh1123", label: "GitHub" },
-                { icon: <Linkedin size={18} />, href: "https://www.linkedin.com/in/siddhesh-wayal-495103228/", label: "LinkedIn" },
+                { icon: <Linkedin size={18} />, href: "https://www.linkedin.com/in/wayalsiddhesh/", label: "LinkedIn" },
                 { icon: <ExternalLink size={18} />, href: "https://leetcode.com/u/siddheshwayal114/", label: "LeetCode" },
                 { icon: <Mail size={18} />, href: "mailto:sidwayal521@gmail.com", label: "Email" },
               ].map((s) => (

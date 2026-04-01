@@ -8,7 +8,7 @@ const certifications = [
     issued: "Feb 2026",
     credentialId: "siddhesh_wayal-fcswm",
     skills: ["C#", "ASP.NET Core"],
-    link: "#",
+    link: "https://www.freecodecamp.org/certification/siddhesh_wayal/foundational-c-sharp-with-microsoft",
   },
   {
     title: "Google Cloud Career Launchpad",
@@ -16,7 +16,7 @@ const certifications = [
     issued: "Jul 2024",
     credentialId: "m8poiseC",
     skills: ["GCP", "Kubernetes", "GKE", "IAM & Security", "Cloud Automation", "Monitoring"],
-    link: null,
+    link: "https://www.linkedin.com/posts/wayalsiddhesh_google-cloud-career-launchpad-cloud-engineer-activity-7224077296943415297-XdLa?utm_source=share&utm_medium=member_desktop&rcm=ACoAADj34vEBiEfW0PYh-X-vqgkw89DUWUHB3cs",
   },
   {
     title: "The Complete Web Developer: Zero to Mastery",
@@ -24,7 +24,7 @@ const certifications = [
     issued: "Mar 2023",
     credentialId: "UC-394724ef-8168-47d5-b050-af9074b27df7",
     skills: ["React.js", "Node.js", "MongoDB", "Express.js", "MERN Stack", "JavaScript"],
-    link: "#",
+    link: "https://www.udemy.com/certificate/UC-394724ef-8168-47d5-b050-af9074b27df7/",
   },
   {
     title: "Python for Beginners",
@@ -32,7 +32,7 @@ const certifications = [
     issued: "Jan 2025",
     credentialId: "UC-623ba6d9-fa10-420e-aa42-ba3e617a95e3",
     skills: ["Python"],
-    link: "#",
+    link: "https://www.udemy.com/certificate/UC-623ba6d9-fa10-420e-aa42-ba3e617a95e3/",
   },
   {
     title: "Webflow 101 Certification",
@@ -40,7 +40,7 @@ const certifications = [
     issued: "Aug 2023",
     credentialId: null,
     skills: ["Webflow", "Responsive Web Design", "Web Hosting"],
-    link: null,
+    link: "https://www.linkedin.com/posts/wayalsiddhesh_webflow-101-activity-7092210977722503168-OnUp?utm_source=share&utm_medium=member_desktop&rcm=ACoAADj34vEBiEfW0PYh-X-vqgkw89DUWUHB3cs",
   },
   {
     title: "Web Development Training Certificate",
@@ -48,7 +48,7 @@ const certifications = [
     issued: "Sep 2023",
     credentialId: null,
     skills: ["WordPress", "Webflow", "SEO", "PHP", "Wix"],
-    link: null,
+    link: "https://www.linkedin.com/posts/wayalsiddhesh_tbnn-training-activity-7105536337436454912-gBa0?utm_source=share&utm_medium=member_desktop&rcm=ACoAADj34vEBiEfW0PYh-X-vqgkw89DUWUHB3cs",
   },
   {
     title: "Web Development",
@@ -56,7 +56,7 @@ const certifications = [
     issued: "Feb 2023",
     credentialId: "TNINTC22-1330",
     skills: ["HTML5", "CSS", "MERN Stack", "Project Management", "Leadership"],
-    link: null,
+    link: "https://www.linkedin.com/posts/wayalsiddhesh_internship-and-course-completion-activity-7035565141949657089-80ZY?utm_source=share&utm_medium=member_desktop&rcm=ACoAADj34vEBiEfW0PYh-X-vqgkw89DUWUHB3cs",
   },
   {
     title: "Letter of Recommendation",

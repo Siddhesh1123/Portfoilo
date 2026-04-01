@@ -10,7 +10,7 @@ const projects = [
     features: ["Real-time Signal Monitoring", "OPC UA + Modbus", "InfluxDB Telemetry", "Docker"],
     tags: ["Full-Stack", ".NET", "IoT"],
     highlight: true,
-    github: "https://github.com/Siddhesh1123",
+    // github: "https://github.com/Siddhesh1123",
   },
   {
     title: "Asset Hierarchy Management System",
@@ -20,7 +20,7 @@ const projects = [
     features: ["JWT & OAuth Auth", "SignalR Real-time", "Serilog Logging", "Docker"],
     tags: ["Full-Stack", ".NET", "Docker"],
     highlight: true,
-    github: "https://github.com/Siddhesh1123",
+    github: "https://github.com/Siddhesh1123/AssetHierarchyAPI",
   },
   {
     title: "Appointment Management System",
@@ -30,7 +30,7 @@ const projects = [
     features: ["Role-based Access", "JWT Auth", "Email Notifications", "Prisma ORM"],
     tags: ["Full-Stack", "NestJS", "TypeScript"],
     highlight: true,
-    github: "https://github.com/Siddhesh1123",
+    github: "https://appointment-system-blond.vercel.app/",
   },
   {
     title: "Job Portal Dashboard",
@@ -39,7 +39,7 @@ const projects = [
     stack: ["Angular 19", "TypeScript", "Nebular", "Angular Material", "Bootstrap"],
     features: ["Job Search & Filter", "Application Forms", "Responsive Dashboard", "Dynamic Data"],
     tags: ["Frontend", "Angular", "SPA"],
-    github: "https://github.com/Siddhesh1123",
+    github: "https://github.com/Siddhesh1123/job-portal-dashboard",
   },
   {
     title: "Admin Dashboard",
@@ -48,7 +48,7 @@ const projects = [
     stack: ["Angular 19", "TypeScript", "Nebular", "Angular Material", "Bootstrap"],
     features: ["Theme Switching", "Scalable Architecture", "API Integration", "Form Validation"],
     tags: ["Frontend", "Angular", "Enterprise"],
-    github: "https://github.com/Siddhesh1123",
+    github: "https://github.com/Siddhesh1123/admindashboard",
   },
   {
     title: "MovieNest",
@@ -57,7 +57,7 @@ const projects = [
     stack: ["React", "Node.js", "Tailwind CSS", "REST API", "Vercel"],
     features: ["API Integration", "Responsive UI", "Vercel Deploy", "Dynamic Search"],
     tags: ["Frontend", "React"],
-    github: "https://github.com/Siddhesh1123",
+    github: "https://movie-nest.vercel.app/",
     link: "#",
   },
   {
@@ -67,7 +67,7 @@ const projects = [
     stack: ["Node.js", "React", "MongoDB"],
     features: ["Doc Verification", "Approval System", "Analytics Dashboard", "Email Alerts"],
     tags: ["Full-Stack", "MERN"],
-    github: "https://github.com/Siddhesh1123",
+    github: "https://github.com/Kaustubh01/Internship",
   },
   {
     title: "Eduspark EdTech Platform",
@@ -76,7 +76,7 @@ const projects = [
     stack: ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS"],
     features: ["Gamified UI", "Full-stack Integration", "Progress Tracking"],
     tags: ["Full-Stack", "EdTech"],
-    github: "https://github.com/Siddhesh1123",
+    github: "https://github.com/OmkarLande/paradox_eduspark",
   },
   {
     title: "Tic-Tac-Toe Game",
@@ -85,7 +85,7 @@ const projects = [
     stack: ["JavaScript", "HTML", "CSS"],
     features: ["Win Detection", "Game History", "State Management", "Interactive UI"],
     tags: ["Frontend", "JavaScript"],
-    github: "https://github.com/Siddhesh1123",
+    github: "https://github.com/Siddhesh1123/tic-tac-toe-game",
   },
 ];
 

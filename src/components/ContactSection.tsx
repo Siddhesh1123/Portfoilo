@@ -62,7 +62,7 @@ const ContactSection = () => {
         >
           {[
             { icon: <Github size={20} />, href: "https://github.com/Siddhesh1123", label: "GitHub" },
-            { icon: <Linkedin size={20} />, href: "https://www.linkedin.com/in/siddhesh-wayal-495103228/", label: "LinkedIn" },
+            { icon: <Linkedin size={20} />, href: "https://www.linkedin.com/in/wayalsiddhesh", label: "LinkedIn" },
             { icon: <ExternalLink size={20} />, href: "https://leetcode.com/u/siddheshwayal114/", label: "LeetCode" },
             { icon: <Mail size={20} />, href: "mailto:sidwayal521@gmail.com", label: "Email" },
           ].map((s) => (
