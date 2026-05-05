@@ -143,9 +143,7 @@ const HeroSection = () => {
                   className="w-full h-full object-cover object-top"
                 />
               </div>
-              <div className="absolute -bottom-4 -right-4 glass-card px-3 py-1.5 rounded-xl border border-primary/30">
-                <span className="text-xs font-mono text-secondary">💻 Open to Work</span>
-              </div>
+              
             </div>
           </div>
 
