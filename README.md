@@ -1,4 +1,4 @@
-# Siddhesh Wayal's Digital Canvas 🎨
+# Siddhesh Wayal's Portfolio 🎨
 
 A modern, interactive portfolio website showcasing my work as a Full-Stack Software Engineer with expertise in ASP.NET Core, React, and cloud technologies.
 
