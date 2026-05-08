@@ -98,7 +98,8 @@ const HeroSection = () => {
                 View My Work
               </a>
               <a
-                href="#contact"
+                href="/resume.pdf"
+                download="Siddhesh_Wayal_Resume.pdf"
                 className="px-6 py-3 rounded-lg border border-primary text-primary font-semibold text-sm transition-all duration-300 hover:bg-primary hover:text-primary-foreground text-center"
               >
                 Download Resume
