@@ -30,7 +30,8 @@ const projects = [
     features: ["Role-based Access", "JWT Auth", "Email Notifications", "Prisma ORM"],
     tags: ["Full-Stack", "NestJS", "TypeScript"],
     highlight: true,
-    github: "https://appointment-system-blond.vercel.app/",
+    github: "https://github.com/Siddhesh1123/Appointment-System",
+    link: "https://appointment-system-blond.vercel.app/",
   },
   {
     title: "Job Portal Dashboard",
@@ -57,8 +58,8 @@ const projects = [
     stack: ["React", "Node.js", "Tailwind CSS", "REST API", "Vercel"],
     features: ["API Integration", "Responsive UI", "Vercel Deploy", "Dynamic Search"],
     tags: ["Frontend", "React"],
-    github: "https://movie-nest.vercel.app/",
-    link: "#",
+    github: "https://github.com/Siddhesh1123/MovieNest",
+    link: "https://movie-nest.vercel.app/",
   },
   {
     title: "Internship Accelerator",
